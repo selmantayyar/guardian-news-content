@@ -12,6 +12,10 @@ For other OS,refer to http://www.couchbase.com/communities/nodejs/getting-starte
 ##CONFIGURATION
 -Change db configuration in app.js file accordingly.
 
+##Dependencies
+
+    npm install
+
 
 ##RUNNING
 First install the db views,then run the application:
