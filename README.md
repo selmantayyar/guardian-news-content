@@ -12,11 +12,12 @@ For other OS,refer to http://www.couchbase.com/communities/nodejs/getting-starte
 ##CONFIGURATION
 -Change db configuration in app.js file accordingly.
 
-##RUNNING
 
-- Install db views.
-node app.js --setup
-- Run the application
+##RUNNING
+First install the db views,then run the application:
+
+    node app.js --setup
+    
     node app.js
 
-Navigate to http://localhost:3200 and enjoy it!
+Navigate to [http://localhost:3200](http://localhost:3200) and enjoy it!
