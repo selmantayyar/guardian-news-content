@@ -1,0 +1,10 @@
+div(class="rule")
+	h1  {{post.value.fields.headline}}
+ 
+p Published on {{post.value.webPublicationDate | date:'medium'}} 
+
+p(ng-bind-html-unsafe="post.value.fields.trailText")
+p 
+	| Please 
+	a(href='{{post.value.webUrl}}', target='_blank') click  
+	|to read full article.

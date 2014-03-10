@@ -1,0 +1,6 @@
+div(class="rule")
+ h1 Article Stats By Date
+div(ng-repeat='date in posts')
+ p 
+     | There are {{date.value}} articles on 
+     a(href='/newsByDate/{{date.key}}')  {{date.key[0]}}/{{date.key[1]}}

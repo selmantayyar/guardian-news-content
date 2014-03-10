@@ -1,0 +1,5 @@
+div(class="rule")
+	h1 Articles on "{{posts[0].key}}" Category
+div(ng-repeat='news in posts') 
+	p
+		a(href='/newsById/{{news.id}}')  {{news.value}}

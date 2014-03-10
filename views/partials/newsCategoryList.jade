@@ -1,0 +1,7 @@
+div(class="rule")
+ h1 List of Article Categories
+div(ng-repeat='category in posts')
+ p 
+   | There are {{category.value}} articles on 
+   a(href='/newsByCategory/{{category.key}}')  {{category.key}} 
+   | category
