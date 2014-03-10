@@ -1,9 +1,7 @@
 var news_views = require('./news_couchdbviews');
 var news_app = require('./news_app');
 
-// connection configuration to pass on to couchbase.connect(). Note that
-// while connecting with the server we are also opening the beer-sample
-// bucket.
+// connection configuration to pass on to couchbase.connect(). 
 var config = {
     host : [ "localhost:8091" ],
     bucket : 'guardian'
