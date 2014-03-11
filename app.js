@@ -1,11 +1,10 @@
 var news_views = require('./news_couchdbviews');
 var news_app = require('./news_app');
+var common = require('./common.js');
 
 // connection configuration to pass on to couchbase.connect(). 
-var config = {
-    host : [ "localhost:8091" ],
-    bucket : 'guardian'
-}
+var config=common.dbconfig;
+
 
 if( require.main == module ) {
     argv = process.argv.splice(2);
