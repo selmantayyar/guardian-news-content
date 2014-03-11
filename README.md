@@ -10,7 +10,7 @@ If you are installing it on windows 7,please refer to my collected experience,si
 For other OS,refer to http://www.couchbase.com/communities/nodejs/getting-started
 
 ##CONFIGURATION
--Change db configuration in app.js file accordingly.
+-Change db configuration in common.js file accordingly.
 
 ##Dependencies
 
