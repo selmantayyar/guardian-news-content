@@ -5,26 +5,30 @@ block body
     #navarea
     #hdr
       h1  The Guardian Open Data Platform Custom Explorer
+
     #lftcol
       div(id="leftcolbox",class="leftcolbox")
         h2 Menu
         ul
           li
-            a(href='/') Home
+            a(href='/') Home & Search
           br
           li
             a(href='/newsByDateStats') See News By Date
           br
           li
             a(href='/newsCategoryList') See News By Category
+          br
+          br
+          br
+          br
 
-      div(id="leftcolbox",class="leftcolbox")
-        p
-        | To get more information about The Guardian Open Data Platform,please see 
-        a(href='http://www.theguardian.com/open-platform',target='_blank') the guardian web site.
     div(ng-view,id="maincol")
 
     #bttmbar
+      span(id="copyright")
+        | To get more information about The Guardian Open Data Platform,please see 
+        a(href='http://www.theguardian.com/open-platform',target='_blank') the guardian web site.
 
   script(src='js/lib/angular/angular.js')
   script(src='js/app.js')

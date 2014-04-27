@@ -121,7 +121,7 @@ body { margin: 0; padding: 0; text-align: center; background: #fff}
 }
 	
 	
-.leftcolbox h1,h2,h3 {
+.leftcolbox h1,h2 {
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0 15px 12px 15px;
 	font-weight: bold;
@@ -231,3 +231,31 @@ acronym {
   line-height: 1.5em;
   list-style-type:  decimal
  }
+
+#keywordField {
+	border:2px solid #58D3F7;
+	border-radius:10px;
+	height: 17px;
+	width: 130px;
+	margin-left: 35px;
+}
+
+#searchBox{
+	width:300px;
+	float:right;
+	height: 10px;
+	margin-bottom: 5px;
+}
+button {
+  color: #111188;
+  background-color: #58D3F7;
+  font-weight: bold;
+  font-size: 100%;
+  margin-left: 5px;
+  border-radius:10px;
+}
+
+p.ex2
+{
+font:italic bold 20px Georgia,serif;
+}

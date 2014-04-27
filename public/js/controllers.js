@@ -1,8 +1,28 @@
 'use strict';
 
 /* Controllers */
-function IndexCtrl($scope, $http) {
-   
+function IndexCtrl($scope, $http, $location,searchResultService) {
+  
+  $scope.form = {};
+  console.log('scope content: '+$scope.post);
+
+  $scope.searchNews = function () {
+     console.log('scope keyword: '+$scope.form.keyword);
+     var queryStr={
+        'query': {
+        'query_string': {
+            'query': $scope.form.keyword,
+              'fields': ["trailText"]
+        }
+      }
+    };
+    $http.post('http://localhost:9200/guardian/_search', queryStr).
+      success(function(data) {
+        console.log(data);
+         searchResultService.setSearchresult(data);
+         $location.url('/readNews');
+      });
+  };
 }
 
 

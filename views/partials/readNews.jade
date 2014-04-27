@@ -1,5 +1,12 @@
-p Search returned {{posts.length}} results
+p(class='ex2') Your search returned {{posts.length}} results
 div(ng-repeat='post in posts')
+	div(class="rule")
+		h1  {{post._source.doc.fields.headline}}
+ 
+	p Published on {{post._source.doc.webPublicationDate | date:'medium'}} 
 
-  h3 {{post.title}}
-  div {{post.text}}
+	p(ng-bind-html-unsafe="post._source.doc.fields.trailText")
+	p 
+		| Please 
+		a(href='{{post._source.doc.webUrl}}', target='_blank') click  
+		|to read full article.

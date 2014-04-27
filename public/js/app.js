@@ -44,8 +44,8 @@ var myApp=angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
 
   this.setSearchresult = function(data) {
     newsList = [];
-     for (var i =0; i<=data.posts.length - 1; i++) {
-       newsList.push(data.posts[i]);
+     for (var i =0; i<=data.hits.hits.length - 1; i++) {
+       newsList.push(data.hits.hits[i]);
      };
   };
 
